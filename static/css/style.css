@@ -1,0 +1,148 @@
+body{
+   margin: 0;
+   line-height: 1.5;
+   font-size: 1em;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    font-size: calc(0.5em + 1vw);
+    /*  base Color */
+    --theme:#f10215;
+    --col333: #333;
+    --col666: #666;
+    --col999: #999;
+    --colddd: #ddd;
+    /*  font-size */
+    --fsS:1.1em;
+    --fsX:1.2em;
+    --fsL:1.3em;
+    --fsXl:1.4em;
+    --footBarHeight:60px;        
+}
+.fsL{
+    font-size: var(--fsL);
+}
+/* pading */
+.pd-center{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 931339 */
+    src: url('//at.alicdn.com/t/font_931339_fhh9h4iqspu.eot');
+    src: url('//at.alicdn.com/t/font_931339_fhh9h4iqspu.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_931339_fhh9h4iqspu.woff') format('woff'),
+    url('//at.alicdn.com/t/font_931339_fhh9h4iqspu.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_931339_fhh9h4iqspu.svg#iconfont') format('svg');
+  }
+.icon{
+    font-family: iconfont;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 1;
+}  
+.icon-arrow-top::before{
+    content: "\e609"
+}  
+/* border */
+
+
+/* flex */
+.flex-box{
+    display: flex;
+}
+.flex-box[data-align="c"] {
+    align-items: center
+}
+.flex-box > .fx1{
+    flex: 1;
+}
+
+@media screen and (max-width:320px) {
+    :root{
+        font-size: calc(0.4em + 1vw);
+    }
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+p{
+    margin: 0
+}
+dl,dt,dd,ul,ol{
+    margin: 0;
+    padding: 0
+}
+
+/* base Color */
+.bgeee{
+    position: relative;
+    z-index: 9;
+}
+.bgeee::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #eee;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*  */
+.text-ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+   -webkit-line-clamp:1;
+   -webkit-box-orient: vertical;
+}
+.text-ellipsis[data-line='2'] {
+    -webkit-line-clamp:2;
+}
+.max-img{
+    display: block;
+    max-width: 100%;
+}
+/* Mint-reset */
+.mint-swipe img{
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+.cell-clear-border{
+    
+}
+.cell-clear-border .mint-cell:last-child,
+.cell-clear-border .mint-cell-wrapper{
+    background: none;
+}
+
+    /* 底部导航 */
+.wm{
+    width: 95%;
+    margin: 0 auto;
+}
+.car-tool{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.car-tool ul{
+    text-align: center;
+    padding: 0 10px;
+}
+.car-tool li{
+    margin-right: 10px;
+}
